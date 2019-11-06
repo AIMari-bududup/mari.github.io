@@ -1,0 +1,245 @@
+
+
+<html>
+
+<!DOCTYPE html>
+
+<head>
+	<title>ABT Employee Leave Requests</title>
+	<style type = "text/css" media = "all">
+		.imgView span{
+			position: absolute;
+			right: 200px;
+			visibility: hidden;
+			}
+		.imgView span > img
+			{border-width: 1;
+			width: 200px;
+			height: 180px
+			}
+		.imgView:hover span{
+			visibility: visible;
+			left: 10cm;
+			top: 13cm
+			}
+		a:hover{
+			text-decoration: underline;
+			}
+		table {
+			font-family:wildwest
+			}
+		table.t {
+			border-bottom-style: solid;
+			border-bottom-width: thin
+			}
+		caption {
+			caption-side: top; text-align: left;
+			color: red;
+			font-style: italic;
+			}
+		td.a {
+			width: 30%; border-right-style: solid;
+			padding-right: 15;
+			line-height: 2
+			}
+		td.b {
+			width: 25%;
+			border-right-style: solid;
+			}
+		tr {
+			vertical-align: top
+			}
+		h4 {
+			color: red
+			}
+
+		select {
+			border-color: 00CC33;
+			border-width: 3px
+			}
+		input {
+			border-radius: 5px
+			}
+		input.a {
+			background-color: CCCCCC
+			}
+		input.b {
+			background-color: 3399FF
+			}
+		ol.roman {
+			list-style-type: lower-roman;
+			}
+		ol.alpha {
+			list-style: inside lower-alpha;
+			}
+		label.m {
+			color: red;
+			font-style: italic;
+			}
+	</style>
+</head>
+<br><br>
+
+<body>
+<table>
+	<tr>
+		<td class="b">
+			<label class="m">Leave Requests</label>
+			<form> 
+				<label>ID No</label>
+				<br> <input class="a" type="text" name="ID">
+				<br> <br>
+				<label>Last Name</label> <br> <input class="a" type="text" name="LName">
+				<br> <br>
+				<label>First Name</label> <br> <input class="a" type="text" name="FName">
+				<br> <br>
+				<label>From</label> <br> <input class="a" type="text" size="10%" name="FromDate">
+				<br> <br>
+				<label>To</label> <br> <input class="a" type="text" size="10%" name="ToDate">
+				<br> <br>
+				Type <br>
+				<select name="leave_type">
+					<option selected>Vacation</option>
+					<option> Sick </option>
+					<option> Study</option>
+					<option> Maternity</option>
+				</select>
+				
+				<br><br>
+
+				<input class="b" type="submit"  value="SUBMIT REQUEST">
+			</form>
+		</td>
+		<!--- end of first column code --->
+		<td class= "a">
+			<label class="m">Leave Request Policies</label>
+			<p>
+			 	<ol class="roman">
+			 		<li> Periods of absence from duty on the grounds of ill health must be supported by a medical certificate signed by a duly registered medical practitioner.</li>
+			 		<li>The certificate should be submitted within five (5) working days from the first day of absence and should cover the entire period of absence.</li>
+			 		<li>Where medical certificates are submitted in support of applications for leave of absence on the grounds of illness, officers are required to ensure that the certificates (whether issued in Jamaica or elsewhere) contain the following information:</li>
+			 	</ol>
+			 	<ol class="alpha">
+			 		<li>Date of issue</li>
+			 		<li>Date of onset of illness</li>
+			 		<li>A statement as to whether or not the officer is unable to perform his duties because of the nature of his illness and also the likely duration of such illness.</li>
+			 	</ol>
+			 </p>
+		</td>
+		<!--- end of second column code --->
+		<td>
+			<table>
+				<tr>
+					<td>
+						<table class="t" cellspacing="15">
+							<caption>On Leave - Vacation</caption>
+							<tr>
+								<th>ID No</th>
+								<th>Employee Number</th>
+								<th>Fr</th>
+								<th>To</th>
+							</tr>
+							<tr>
+								<td><a class="imgView">878E <span><img src="878E.jpg"></span></a></td>
+								<td>SAMUELS, Allison</td>
+								<td>May 13, 2018</td>
+								<td>June 12, 2018</td>
+							</tr>
+							<tr>
+								<td>4378</td>
+								<td>SOX, Bertland</td>
+								<td>May 18, 2018</td>
+								<td>June 1, 2018</td>
+							</tr>
+							<tr>
+								<td>87R3</td>
+								<td>GREENE, Mary-Ann</td>
+								<td>Apr 5, 2018</td>
+								<td>Aug 1, 2018</td>
+							</tr>
+							<tr>
+								<td>F453</td>
+								<td>AVENUE, Sait</td>
+								<td>June 3, 2018</td>
+								<td>Oct 5, 2018</td>
+							</tr>
+							<tr>
+								<td>672A</td>
+								<td>SAMUELS, Fraser</td>
+								<td>May 13, 2018</td>
+								<td>Jun 9, 2018</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!--- end of third column, first row code --->
+				<tr>
+					<td>
+						<table class="t"  cellspacing ="15">
+							<caption>On Leave - Sick</caption>
+							<tr>
+								<th>ID No</th>
+								<th>Employee Number</th>
+								<th>Fr</th>
+								<th>To</th>
+							</tr>
+							<tr>
+								<td>F45W</td>
+								<td>YOUNIS, Eddie</td>
+								<td>May 1, 2018</td>
+								<td>June 12, 2018</td>
+							</tr>
+							<tr>
+								<td>632A</td>
+								<td>SAMUEL, William</td>
+								<td>May 13, 2018</td>
+								<td>Jun 9, 2018</td>
+							</tr>
+						</table>
+					</td>					
+				</tr>
+				<!--- end of third column, second row code --->
+				<tr>
+					<td>
+						<table  cellspacing="15">
+							<caption>Leave Requested & Awaiting Approval</caption>
+							<tr>
+								<th>ID No</th>
+								<th>Employee Number</th>
+								<th>Type</th>
+							</tr>
+							<tr>
+								<td><a class="imgView">F483<span><img src="F483.png"></span></a></td>
+								<td>AVENUT, Greg</td>
+								<td>Vacation</td>
+							</tr>
+							<tr>
+								<td>6A4A</td>
+								<td>SAMUELS, Lionel</td>
+								<td>Vacation</td>
+							</tr>
+							<tr>
+								<td>672Z</td>
+								<td>GIBBS, Lancelot</td>
+								<td>Sick</td>
+							</tr>
+							<tr>
+								<td>GA9Z</td>
+								<td>ROACH, Denise</td>
+								<td>Vacation</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<!--- end of third column code --->
+	</tr>
+</table>
+</body>
+
+</html>
+
+
+
+
